@@ -1,0 +1,7 @@
+const accountId=343223;   // constant
+let accountEmail="ujjwalgupta@gmail.com"  //can be changed
+ accountName="ujjwal";
+ let accountState;
+
+console.table([accountId,accountEmail,accountName,accountState]);
+
