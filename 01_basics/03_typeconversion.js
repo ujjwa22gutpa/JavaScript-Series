@@ -19,11 +19,14 @@ let LoggedIn=true;
 let BooleanIsLogged=Boolean(isLoggedIn);
 let BooleanLoggedIn=Boolean(isLogged);
 let IsLoggedIn=Boolean(LoggedIn);
-console.log(BooleanIsLogged)
-console.log(BooleanLoggedIn)
-console.log(IsLoggedIn)
+// console.log(BooleanIsLogged)
+// console.log(BooleanLoggedIn)
+// console.log(IsLoggedIn)
 
 //Boolean()
 //1=> true  
 // " "=> false
 // "ujjwal"=> true
+
+
+
