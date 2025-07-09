@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .bg-black{
+            background-color:black;
+        }
+        .first-div{
+            background-color:rgb(0, 140, 255);
+        }
+        /* .white{
+            color:white;
+        } */
+        .p-white{
+            color:white;
+        }
+    </style>
+    <title>DOM Manipulation</title>
+</head>
+<body class="bg-black">
+    <div class="first-div">
+        <h1 id="head" class="white">this is DOM
+            <span style="display: none;">hello</span>
+        </h1>
+        <p  id= "no" class="p-white">Lorem ipsum dolor sit.</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <ul>
+            <li class="temp-list">this is unordered list</li>
+            <li class="temp-list">this is unordered list</li>
+            <li class="temp-list">this is unordered list</li>
+        </ul>
+    </div>
+    <script>
+       const tittle= document.getElementById('head')
+       tittle.style.backgroundColor='red'
+       //tittle.innerText
+      // tittle.innerHTML="<h1> hello it is a DOM </h1>"
+      //tittle.getAttribute('class')
+    //   tittle.getAttribute('id')
+    //   tittle.setAttribute("class","name-hello")
+
+    //tittle.innerHTML  it  gives you the inner html of that Element
+   // tittle.textContent  it gives you the inner content inside that Element
+  // tittle.innerText it gives you the inner text of that Element
+  //document.querySelector('h2').style.color='yellow'
+
+
+  //const val=document.querySelector('ul')
+//   const val2=val.querySelector('li')
+//   val2.style.backgroundColor='green'
+//   val2.innerText='ujjwal'
+
+//   const thh2=document.querySelector('h2:nth-of-type(3)')
+// thh2.innerText='chaneg by me'
+
+
+// const allh2s=document.querySelectorAll('h2')
+// const sech2=allh2s[1]
+// sech2.innerHTML='<h1>krishna</h1>'
+
+
+
+// const allh2=document.querySelectorAll('h2')
+// allh2.forEach((val)=>{
+//     val.style.backgroundColor='green'
+// })
+
+    </script>
+</body>
+</html>

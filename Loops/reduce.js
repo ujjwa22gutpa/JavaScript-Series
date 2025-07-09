@@ -24,5 +24,12 @@ const myCart=[
     }
 ]
 
-const totalPrice=myCart.reduce((acc,item)=> (acc+item.Price),0)
-console.log(`the total price of all the items is ${totalPrice}`)
+// const totalPrice=myCart.reduce((acc,item)=> (acc+item.Price),0)
+// console.log(`the total price of all the items is ${totalPrice}`)
+
+
+
+let a=10;
+let b=20;
+let c=30;
+console.table(a,b,c);
