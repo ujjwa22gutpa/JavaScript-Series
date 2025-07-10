@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>
+    </div>
+
+    <script>
+       const parent= document.querySelector('.parent')
+    //    console.log(parent.children[0].style.backgroundColor="red")
+    //           console.log(parent.children[0].innerText)
+       const arr=parent.children
+
+    // console.log("nodes",parent.childNodes)
+              for (const el of arr) {
+                console.log(el.innerText)
+              }
+
+          
+        // for (let i = 0; i < arr.length; i++) {
+        //      console.log(arr[i].innerText);
+            
+        // }
+
+
+        // It works when we access from parent to child
+        // console.log(parent.firstElementChild)
+        // console.log(parent.lastElementChild)
+
+        // How to get a parent form child element
+
+    //     const child=document.querySelectorAll('.days')
+    //     console.log(child)
+    //    const first=child[0]
+    //    console.log(first.parentElement.children)
+    //    const val=first.parentElement.children
+    //    for (const el of val) {
+    //     console.log(el)
+    //    }
+
+//     const firstchild=document.querySelector('.days')
+//    console.log(firstchild)
+//    console.log(firstchild.parentElement)
+//    console.log(firstchild.nextElementSibling)
+
+   
+
+     
+    </script>
+</body>
+</html>
