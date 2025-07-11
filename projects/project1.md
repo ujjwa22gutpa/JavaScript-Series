@@ -1,6 +1,6 @@
-## project1
+## project1 solution code
 
-``` 
+``` javascript
 
 console.log("hitesh")
 const buttons = document.querySelectorAll('.button');
