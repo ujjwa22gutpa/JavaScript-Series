@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .button {
+            height: 59px;
+            width: 60px;
+            background-color: aqua;
+            border-radius:10px ;
+        }
+
+        ul:hover {
+            cursor: pointer;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>About Event listeners</h1>
+    <!-- <ul class="ul">
+        <li>home</li>
+        <li class="image">image</li>
+        <li>kya pta</li>
+        <li>nhi pta</li>
+        <li>pta nhi</li>
+    </ul> -->
+
+    <button class="button">button</button>
+</body>
+<script>
+
+
+function randomColor(){
+    let r=Math.floor(Math.random()*256);
+    let g=Math.floor(Math.random()*256);
+    let b=Math.floor(Math.random()*256);
+
+    return `rgb(${r},${g},${b})`
+}
+function showTime(){
+  const btn=document.querySelector('.button')
+ return setInterval((e)=>{
+    const date =new Date();
+    btn.innerHTML=date.toLocaleTimeString();
+ },1000)
+}
+const button=document.querySelector('.button')
+button.addEventListener('click',function (e){
+   // document.body.style.backgroundColor=randomColor();
+    setInterval((e)=>{
+          document.body.style.backgroundColor=randomColor();
+            showTime()
+    },1000)
+
+})
+
+
+    //type timestamp ,defaultprevent
+    //target,toElement ,srcElemnt,currTarget
+    //altKey,ctrlKey,shiftKey,keyCode
+    //document.getElementById('btn').addEventListerner('click',()=>{
+    //})
+    //attachEvent()
+    //jQuery-on
+
+
+    // const btn=document.querySelector('.button')
+    // btn.addEventListener('click',(e)=>{
+    //     const arr=['yellow','red','blue','red']
+    //   const body=  document.querySelector('body')
+    //   arr.forEach((el)=>{
+    //         body.style.backgroundColor=`${el}`
+    //   })
+    // // document.body.style.backgroundColor = 'yellow';
+    // },false)
+
+    // for propogation (bubbling)
+    // it will print 'secoond' then 'first'
+    // document.querySelector('.ul').addEventListener('click', function (e) {
+    //     console.log('first')
+    // }, false)
+
+    // document.querySelector('images').addEventListener('click', function (e) {
+    //     e.stopPropagation()
+    //     console.log('second')
+    // }, false)
+
+    //  for capturing
+    // it will print 'first' then 'second'
+
+    // document.querySelector('.ul').addEventListener('click', function (e) {
+    //     console.log('first')
+    // }, true)
+
+    // document.querySelector('images').addEventListener('click', function (e) {
+    //     console.log('second')
+    // }, true)
+</script>
+
+</html>

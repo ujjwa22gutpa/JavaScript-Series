@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="h1">best js course</h1>
+    <button id="button">click me</button>
+
+</body>
+<script>
+    // const printMyName= function name(){
+    //     console.log("ujjwal")
+    // }
+    // setTimeout(printMyName,2000)
+    const changeMe=   setTimeout(function (){
+          document.querySelector('.h1').innerHTML='hitesh sir is great teacher'
+       },2000)
+
+    document.querySelector('#button').addEventListener('click',()=>{
+        console.log("stopped")
+        clearTimeout(changeMe)
+    })
+</script>
+</html>
