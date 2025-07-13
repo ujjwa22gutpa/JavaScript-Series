@@ -42,7 +42,7 @@ function randomColor(){
 }
 function showTime(){
   const btn=document.querySelector('.button')
- return setInterval((e)=>{
+   return setInterval((e)=>{
     const date =new Date();
     btn.innerHTML=date.toLocaleTimeString();
  },1000)
